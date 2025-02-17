@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+                   initial-scale=1.0">
+    <title>propertiesforRent</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="pages.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- for header part -->
+    <header>
+
+        <div class="logosec">
+            <div class="logo"><img src="logo.png" alt="Company Logo" style="width: 6em;
+                height: 4.8rem;
+                padding-top: 13px;"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <div class="searchbtn">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                    class="icn srchicn" alt="search-icon">
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt="">
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3><a style="color: white;" href="index.html"> Dashboard</a></h3>
+                    </div>
+
+                    <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                        <h4><a href="propForSale.html"> Properties for Sale</a></h4>
+                    </div>
+
+                    <div class="nav-option option3">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" alt="report">
+                        <h4> <a href="propForRent.html">Properties for Rent</a></h4>
+                    </div>
+
+                    <div class="nav-option option4">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                            class="nav-img" alt="institution">
+                        <h4><a href="Users.html"> Users</a></h4>
+                    </div>
+<div class="margin-bottom-bar">
+                    <!-- Change Password Option -->
+                    <div class="nav-option option6" id="changePasswordBtn">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+                            class="nav-img" alt="settings">
+                        <h4>Change Password</h4>
+                    </div>
+
+                    <!-- Logout Option -->
+                    <div class="nav-option logout" id="logoutBtn">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h4>Logout</h4>
+                    </div>
+                </div>
+                    <!-- Change Password Modal -->
+                    <div id="changePasswordModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" id="closePasswordModal">&times;</span>
+                            <h2>Change Password</h2>
+                            <form id="changePasswordForm">
+                                <label for="current-password">Current Password:</label>
+                                <input type="password" id="current-password" name="current-password" required>
+
+                                <label for="new-password">New Password:</label>
+                                <input type="password" id="new-password" name="new-password" required>
+
+                                <label for="confirm-password">Confirm New Password:</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                                <button type="submit">Update Password</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Logout Confirmation Modal -->
+                    <div id="logoutModal" class="modal">
+                        <div class="modal-content">
+                            <h2>Are you sure you want to logout?</h2>
+                            <div class="modal-actions">
+                                <button id="confirmLogout">Yes</button>
+                                <button id="cancelLogout">No</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" name="" id="" placeholder="Search">
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="main-content">
+                <!-- <div class="container">
+                    <div class="heading">Properties For Rent</div>
+                    <div class="update-section">
+                        <button class="button">Update</button>
+                        <span class="last-update">Last Update: 1/10/2024, 21:07:16</span>
+                    </div>
+                    <div class="button-section">
+                        <button class="button">Export</button>
+                        <button class="button">Import</button>
+                    </div>
+                </div> -->
+                <div class="container">
+                    <div class="heading">
+                        Properties For Rent
+                        <div class="dropdown">
+                            <ul>
+                                <li>Agent 1</li>
+                                <li>Agent 2</li>
+                                <li>Agent 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="update-section">
+                        <button class="button">Update</button>
+                        <span class="last-update">Last Update: 1/10/2024, 21:07:16</span>
+                    </div>
+                    <div class="button-section">
+                        <button class="button">Export</button>
+                        <button class="button">Import</button>
+                    </div>
+                </div>
+               
+                <div id="properties-list">
+                    <div class="property-list">
+                        <table class="styled-table" id="property-table">
+                            <!-- entries table -->
+                            <div class="entries-container">
+                                <label for="entries-select">Show</label>
+                                <select id="entries-select" class="entries-dropdown">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                <span>entries</span>
+                            </div>
+                            <thead>
+                                <tr>
+                                    <th>Logo</th>
+                                    <th>Property Name</th>
+                                    <th>Agent Name</th>
+                                    <th>Listing Price</th>
+                                    <th>Bedrooms</th>
+                                    <th>Latitude</th>
+                                    <th>Longitude</th>
+                                    <th>Property URL</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="property-row" data-agent="Riya Verma">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Sunshine Apartments</td>
+                                    <td>Riya Verma</td>
+                                    <td>$300,000</td>
+                                    <td>3</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Amitabh Srivastava">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Niftel Apartments</td>
+                                    <td>Amitabh Srivastava</td>
+                                    <td>$400,000</td>
+                                    <td>3</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Himanshu Swaroop">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Oasis Residences</td>
+                                    <td>Himanshu Swaroop</td>
+                                    <td>$500,000</td>
+                                    <td>4</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Himanshu Swaroop">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Oasis Residences</td>
+                                    <td>Riya</td>
+                                    <td>$500,000</td>
+                                    <td>4</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Himanshu Swaroop">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Oasis Residences</td>
+                                    <td>Jitender</td>
+                                    <td>$500,000</td>
+                                    <td>4</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Himanshu Swaroop">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Oasis Residences</td>
+                                    <td>kashmira</td>
+                                    <td>$500,000</td>
+                                    <td>4</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                                <tr class="property-row" data-agent="Himanshu Swaroop">
+                                    <td><img src="logo.png" alt="Logo" class="property-logo"></td>
+                                    <td>Oasis Residences</td>
+                                    <td>Rekha</td>
+                                    <td>$500,000</td>
+                                    <td>4</td>
+                                    <td>37.7749</td>
+                                    <td>-122.4194</td>
+                                    <td><a href="#">www.property-url.com</a></td>
+                                    <td>
+
+                                        <button class="hide-btn">Hide</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- pagination -->
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#">1</a>
+                            <a class="active" href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+<script>                        </script>
+    <script src="script.js"></script>
+
+</body>
+</body>
+
+</html>
